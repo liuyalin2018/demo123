@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>my love</title>
+
+    <link type="text/css" href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <audio src="bgm.mp3" controls autoplay loop></audio>
+    <div class="step" id="step">
+        <ul class="step1" id="step1">
+            <li class="one">&nbsp&nbsp一&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp识</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp两&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp知</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp三&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp惜</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp四&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp恋</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp五&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp爱</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp六&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp随</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp七&nbsp&nbsp步&nbsp&nbsp相&nbsp&nbsp守</li>
+            <li></li>
+            <li class="one">&nbsp八&nbsp步&nbsp不&nbsp离&nbsp不&nbsp弃</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp九&nbsp步&nbsp共&nbsp白&nbsp头</li>
+            <li></li>
+            <li class="one">&nbsp&nbsp及&nbsp&nbsp尔&nbsp&nbsp偕&nbsp&nbsp老</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <ul class="minbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ol class="maxbox" onmouseover="over();" onmouseout="out()">
+            <li><img class="big" src="img/1.jpg" /></li>
+            <li><img class="big" src="img/2.jpg" /></li>
+            <li><img class="big" src="img/3.jpg" /></li>
+            <li><img class="big" src="img/4.jpg" /></li>
+            <li><img class="big" src="img/5.jpg" /></li>
+            <li><img class="big" src="img/6.jpg" /></li>
+        </ol>
+    </div>
+
+
+
+</body>
+<script>
+    var one = document.getElementsByClassName("one");
+    var a = 0;
+    var b = setInterval(function() {
+        one[a].style.background = "rgb(137, 147, 156)";
+        a++;
+    }, 1500);
+    if (a > 10) {
+        clearInterval(b);
+    }
+    clearInterval();
+    var big = document.getElementsByClassName("big");
+
+    function over() {
+        big[0].src = "img/11.jpg ";
+        big[1].src = "img/12.jpg ";
+        big[2].src = "img/13.jpg ";
+        big[3].src = "img/14.jpg ";
+        big[4].src = "img/15.jpg ";
+        big[5].src = "img/16.jpg ";
+
+    }
+
+    function out() {
+        big[0].src = "img/1.jpg ";
+        big[1].src = "img/2.jpg ";
+        big[2].src = "img/3.jpg ";
+        big[3].src = "img/4.jpg ";
+        big[4].src = "img/5.jpg ";
+        big[5].src = "img/6.jpg ";
+    }
+
+
+
+    window.onclick = function() {
+        window.location.href = "index.html";
+    }
+</script>
+
+</html>
